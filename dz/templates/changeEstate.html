@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Estate</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    <form method="post">
+        <input type="text" name="idEstate" placeholder="Введите номер недвижимости:" style="text-align: center;">
+        <input type="text" name="address" placeholder="Введите адрес:" style="text-align: center;">
+        <input type="text" name="square" placeholder="Введите площадь:" style="text-align: center;"><br>
+        <input type="text" name="type" placeholder="Введите один из типо недвижимости:  1. House, 2. Flat, 3. Loft, 4. Dacha :" style="text-align: center;"><br>
+
+
+        <button type="submit" style="color: rgb(115, 224, 186); text-align: center">Обновить</button> {% if error %}<br>
+        <p style="color: red;">Ошибка обновления недвижимости</p>
+        {% endif %}
+
+    </form>
+</body>
+
+</html>

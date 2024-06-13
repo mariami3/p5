@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    <form method="post">
+        <input type="withdrow" name="address" placeholder="Введите количество средств::" style="text-align: center;">
+
+
+        <button type="submit" style="color: rgb(160, 160, 255); text-align: center;">Вывести</button> {% if error %}<br>
+        <p style="color: red;">Ошибка вывода средств</p>
+        {% endif %}
+
+    </form>
+</body>
+
+</html>

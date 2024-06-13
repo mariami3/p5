@@ -1,0 +1,7 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: auto;
+    gap: 20px;
+}

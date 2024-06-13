@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+</head>
+
+<body>
+    {% include "header.html" %}
+    <form method="post">
+        <input type="text" name="username" placeholder="Создайте логин">
+        <input type="text" name="password" placeholder="Создайте пароль">
+
+        <button type="submit">Авторизоваться</button> {% if error %}
+        <p style="color: red;">Неккоректно задан логин или пароль</p>
+        {% endif %}
+
+    </form>
+</body>
+
+</html>
